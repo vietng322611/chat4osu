@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="chat4osu.Login"
+             Title="Login">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label
+                x:Name="Username"
+                Text="Username" />
+            
+            <Entry
+                x:Name="UsernameEntry"
+                Text="Murasaki Rie"
+                Placeholder="Enter Username"
+                ClearButtonVisibility="WhileEditing" />
+
+            <Label 
+                x:Name="Passw"
+                Text="Password" />
+
+            <Entry
+                x:Name="PasswEntry"
+                Text="996c0240"
+                Completed="OnPasswCompleted"
+                Placeholder="Enter Password"
+                IsPassword="True"
+                ClearButtonVisibility="WhileEditing"/>
+
+            <Button
+                x:Name="Submit"
+                Text="Login"
+                Clicked="OnClicked"
+                VerticalOptions="Center" />
+
+            <Label
+                x:Name="Status" 
+                Text=""
+                VerticalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
